@@ -13,10 +13,6 @@ const GenerarNumeroSecreto = () => {
 
 };
 
-
-
-
-
 function App() {
   //generar el numero secreto y guardarlo en una constante
   const[numeroSecreto , setNumeroSecreto] = useState(GenerarNumeroSecreto); 
