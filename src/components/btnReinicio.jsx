@@ -6,8 +6,5 @@ const btnreinicio = ({reiniciar}) => {
             <button onClick={reiniciar} className="btn again">Reiniciar!</button>
         </div>
     )
-
 }
-
-
 export default btnreinicio;

@@ -1,41 +1,4 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 * {
@@ -53,10 +16,8 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
-  /* background-color: #60b347; */
 }
 
-/* LAYOUT */
 header {
   position: relative;
   height: 35vh;
@@ -83,7 +44,6 @@ main {
   font-size: 2rem;
 }
 
-/* ELEMENTS STYLE */
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -154,4 +114,145 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* @media (max-width: 768px) {
+
+
+  header{
+    width: 100%;
+
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+
+  .number {
+    font-size: 4rem;
+    width: 10rem;
+    padding: 2rem 0rem;
+  }
+
+  .between {
+    font-size: 8rem;
+    top: 15%;
+    right: 15%;
+  }
+
+  .flexo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+  }
+
+  .left {
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 54rem;
+    font-size: 2rem;
+  }
+} */
+
+
+.espacio{
+  height: 300px;
+  width: 100%;
+  opacity: 0; 
+  margin-top: 300px;
+}
+
+@media (max-width: 480px) {
+
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 155%;
+  }
+  h1 {
+    font-size: 2rem;
+    /* margin-left: 20%; */
+  }
+
+  .flexo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60%;
+  }
+
+  .number {
+    font-size: 3rem;
+    width: 10rem;
+    padding: 1rem 0rem;
+  }
+  
+
+  .between {
+    width: 300px;
+    font-size: 1.3rem;
+    top: 11%;
+    /* left: 75%; */
+  }
+
+  .btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    /* margin-left: 100%; */
+  }
+
+  .message {
+    margin-bottom: 8rem;
+    height: 3rem;
+    margin-top: -15%;
+  }
+
+  .guess {
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 5rem;
+    padding: 2.5rem;
+    width: 20rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+    margin-left: 200%;
+    margin-top: 250%;
+  }
+  
+  #btnAdivinar{
+    margin-left: 450%;
+    margin-top: -50%;
+    padding: 2.5rem;
+    font-size: 2rem;
+  }
+  
 }

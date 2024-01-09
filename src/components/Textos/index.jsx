@@ -5,16 +5,13 @@ import Puntaje from './puntaje';
 
 const Textos = ({mensajeResultado , puntuacion, puntajeAlto}) => {
     return (
-        <section className="right">
-          <Mensaje mensaje={mensajeResultado}/>
-          <Puntaje texto="💯 Puntuación" puntaje={puntuacion}/>
-          <hr />
-          <br />
-          <Puntaje texto="🥇 Puntaje mas Alto" puntaje={puntajeAlto}/>
-          {/* <p>
-            🥇 Puntaje Alto: <span>0</span>
-          </p> */}
-        </section>
+      <section className="right">
+        <Mensaje mensaje={mensajeResultado}/>
+        <Puntaje texto="💯 Puntuación" puntaje={puntuacion}/>
+        <hr />
+        <br />
+        <Puntaje texto="🥇 Puntaje mas Alto " puntaje={puntajeAlto}/>
+      </section>
     );
 };
 

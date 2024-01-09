@@ -3,9 +3,8 @@ import React , {useState} from 'react';
 const Formulario = ({comparar}) => {
 
     const [numero, setNumero] = useState('');
-    const RevisarNumero = () =>{
-        
 
+    const RevisarNumero = () =>{
         comparar(numero);
     }
 
@@ -17,10 +16,8 @@ const Formulario = ({comparar}) => {
     return (
        <section className="left">
             <input type="number" value={numero} className="guess" onChange={ActualizarValorNumero} />
-            <button onClick={RevisarNumero} className="btn check">Check!</button>
+            <button onClick={RevisarNumero} id='btnAdivinar' className="btn check">Adivinar!</button>
        </section>
-
-
 
 
     );
